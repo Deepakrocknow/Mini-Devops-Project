@@ -1,0 +1,19 @@
+---
+# Playbook to upload new code and restart the service
+- name: Upload new code and restart the service
+  hosts: 1@.211.55.11
+  vars:
+    app: httpd
+  tasks:
+    - name: Place custom HTML file
+      copy:
+        src: /var/lib/jenkins/workspace/website-update/index.html
+        dest: /var/www/html/index.html
+      become: true
+
+    - name: Start the service
+      service:
+        name: httpd
+        state: restarted
+        enabled: yes
+      become: true
