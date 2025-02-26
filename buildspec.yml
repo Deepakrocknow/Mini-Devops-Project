@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Updating packages and installing Nginx..."
+      - sudo apt-get update -y
+      - sudo apt-get install -y nginx
+  build:
+    commands:
+      - echo "Moving index.html to Nginx web root..."
+      - sudo mv index.html /var/www/html/index.html
+  post_build:
+    commands:
+      - echo "Starting Nginx..."
+      - sudo systemctl start nginx
+      - sudo systemctl enable nginx
+
+artifacts:
+  files:
+    - index.html
+  discard-paths: yes
