@@ -1,4 +1,4 @@
-# AWS S3 Static Website Hosting
+# AWS S3 Static Website Hosting using Terraform
 
 ## Project Overview
 This project sets up a static website hosted on an **Amazon S3 bucket** using Terraform.
