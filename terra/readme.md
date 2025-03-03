@@ -5,7 +5,8 @@ This project sets up a static website hosted on an **Amazon S3 bucket** using Te
 
 ## 🌐 Live Website
 Access the website here:  
-**[My S3 Static Website](http://my-tf-bucket-by-dev-916555.s3-website.ap-south-1.amazonaws.com/)**
+
+http://my-tf-bucket-by-dev-916555.s3-website.ap-south-1.amazonaws.com/
 
 ## 📂 Project Structure
 ```
@@ -41,10 +42,8 @@ Access the website here:
    ```
 
 ### 🌟 Website URL Output
-After successful deployment, Terraform outputs the website URL. You can manually visit the link or fetch it via:
-```sh
-echo $(terraform output website_url)
-```
+
+http://my-tf-bucket-by-dev-916555.s3-website.ap-south-1.amazonaws.com/
 
 ## 🔧 Updating the Website
 1. Modify `index.html` or `error.html`
