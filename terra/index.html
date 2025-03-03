@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak Singh Tomar | Advanced Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#6366F1",
+                        secondary: "#F472B6",
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full top-0 bg-opacity-30 backdrop-blur-md p-4 shadow-lg z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-extrabold text-primary">Deepak Singh Tomar</h1>
+            <ul class="flex space-x-6 text-lg">
+                <li><a href="#about" class="hover:text-secondary transition">About</a></li>
+                <li><a href="#projects" class="hover:text-secondary transition">Projects</a></li>
+                <li><a href="#skills" class="hover:text-secondary transition">Skills</a></li>
+                <li><a href="#contact" class="hover:text-secondary transition">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex flex-col items-center justify-center text-center px-6">
+        <h2 class="text-6xl font-extrabold bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">
+            Building Scalable Systems 🚀
+        </h2>
+        <p class="mt-4 text-xl text-gray-400 max-w-3xl">
+            Software Engineer | DevOps Specialist | AI Integrator
+        </p>
+        <a href="#projects" class="mt-6 px-8 py-3 bg-primary text-white rounded-full text-lg font-semibold hover:scale-105 transform transition shadow-lg">
+            Explore My Work 🔥
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 container mx-auto text-center">
+        <h2 class="text-4xl font-bold text-primary">About Me</h2>
+        <p class="text-gray-400 mt-4 max-w-3xl mx-auto">
+            Experienced in full-stack development, cloud computing, and infrastructure automation. Passionate about architecting scalable solutions using Kubernetes, Kafka, and AI-driven automation.
+        </p>
+    </section>
+
+    <!-- Advanced Projects Section -->
+    <section id="projects" class="py-20 container mx-auto text-center">
+        <h2 class="text-4xl font-bold text-secondary">Advanced Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
+            <a href="https://github.com/Deepakrocknow/newsCollection-react" target="_blank" class="p-6 bg-gray-800 rounded-2xl shadow-xl hover:scale-105 transition transform">
+                <h3 class="text-2xl font-bold text-primary">AI-Powered News Aggregator</h3>
+                <p class="text-gray-400 mt-2">A cutting-edge AI-driven news summarization platform using NLP.</p>
+            </a>
+            <a href="https://github.com/Deepakrocknow/Ecommerce-react" target="_blank" class="p-6 bg-gray-800 rounded-2xl shadow-xl hover:scale-105 transition transform">
+                <h3 class="text-2xl font-bold text-secondary">Scalable E-Commerce Platform</h3>
+                <p class="text-gray-400 mt-2">Full-stack e-commerce system with Next.js, AWS Lambda, and microservices.</p>
+            </a>
+            <a href="https://github.com/Deepakrocknow/Kafka" target="_blank" class="p-6 bg-gray-800 rounded-2xl shadow-xl hover:scale-105 transition transform">
+                <h3 class="text-2xl font-bold text-primary">Cloud-Native Kafka Implementation</h3>
+                <p class="text-gray-400 mt-2">Streaming data pipeline built with Kafka, Kubernetes, and Terraform.</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 container mx-auto text-center">
+        <h2 class="text-4xl font-bold text-primary">Technical Stack</h2>
+        <p class="text-gray-400 mt-4">React.js | Next.js | Node.js | Kafka | AWS | Docker | Kubernetes | Terraform | AI/ML | CI/CD Pipelines</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 container mx-auto text-center">
+        <h2 class="text-4xl font-bold text-secondary">Let's Connect</h2>
+        <p class="text-gray-400 mt-4">Want to collaborate? Email me at <span class="text-primary">deepaktomar3122003@gmail.com</span></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 p-6 text-center">
+        <p class="text-gray-400">&copy; 2025 Deepak Singh Tomar. Innovating the Future.</p>
+    </footer>
+</body>
+</html>
